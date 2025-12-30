@@ -1,12 +1,16 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    bigdecimal (3.3.1)
+    csv (3.3.5)
     diff-lcs (1.2.5)
-    httparty (0.12.0)
-      json (~> 1.8)
+    httparty (0.24.0)
+      csv
+      mini_mime (>= 1.0.0)
       multi_xml (>= 0.5.2)
-    json (1.8.1)
-    multi_xml (0.5.5)
+    mini_mime (1.1.5)
+    multi_xml (0.7.1)
+      bigdecimal (~> 3.1)
     redis (3.1.0)
     rspec (3.1.0)
       rspec-core (~> 3.1.0)
@@ -25,6 +29,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  httparty
+  httparty (>= 0.24.0)
   redis
   rspec
+
+BUNDLED WITH
+   2.3.27
